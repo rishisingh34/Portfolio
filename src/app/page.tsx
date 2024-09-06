@@ -1,6 +1,5 @@
 "use client";
 import { useState } from 'react';
-import { useSpring, animated } from '@react-spring/web';
 import Image from "next/image";
 import { rishi, whitelink } from "@/constants/images";
 import About from "@/components/About";
@@ -14,31 +13,6 @@ export default function Home() {
 
   const handleNavClick = (section: string ) => {
     setActiveSection(section);
-  };
-
-  const animationProps = useSpring({
-    opacity: 1,
-    transform: 'scale(1)',
-    from: { opacity: 0, transform: 'scale(0.98)' },
-    reset: true,
-    config: { duration: 500 },
-  });
-
-  const renderSection = () => {
-    switch (activeSection) {
-      case 'About':
-        return <About />;
-      case 'Projects':
-        return <Projects />;
-      case 'Skills':
-        return <Skills />;
-      case 'Socials':
-        return <Socials />;
-      case 'Education':
-        return <Education />;
-      default:
-        return null;
-    }
   };
 
   return (

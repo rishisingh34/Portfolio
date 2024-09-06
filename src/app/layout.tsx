@@ -19,11 +19,6 @@ const textMeOne = Text_Me_One({
   weight: "400",
   variable: "--font-text-me-one",
 });
-const ebGaramond = EB_Garamond({
-  subsets: ["latin"],
-  weight: ["800","400", "500", "600",  "700"], 
-  variable: "--font-eb-garamond",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
