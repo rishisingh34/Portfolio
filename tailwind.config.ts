@@ -9,11 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#0D0C0C", 
+        active: "#FF8A00",
+        link: "#00D1FF",  
+        scroll: "#E6AB15", 
+      },
+      fontFamily: {
+        spaceGrotesk: ['var(--font-space-grotesk)', 'sans-serif'],
+        openSans: ['var(--font-open-sans)', 'sans-serif'],
+        textMeOne: ['var(--font-text-me-one)', 'sans-serif'],
       },
     },
   },
   plugins: [],
 };
+
 export default config;

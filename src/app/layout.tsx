@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Space_Grotesk, Open_Sans, Text_Me_One } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300","400", "700"], 
+  variable: "--font-space-grotesk",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300","400", "500", "600",  "700"],
+  variable: "--font-open-sans",
+});
+
+const textMeOne = Text_Me_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-text-me-one",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${openSans.variable} ${textMeOne.variable} antialiased bg-primary text-white`}
       >
         {children}
       </body>
