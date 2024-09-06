@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Open_Sans, Text_Me_One } from "next/font/google";
+import { Space_Grotesk, Open_Sans, Text_Me_One, EB_Garamond } from "next/font/google";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -18,6 +18,11 @@ const textMeOne = Text_Me_One({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-text-me-one",
+});
+const ebGaramond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["800","400", "500", "600",  "700"], 
+  variable: "--font-eb-garamond",
 });
 
 export const metadata: Metadata = {

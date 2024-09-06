@@ -18,6 +18,7 @@ const config: Config = {
         spaceGrotesk: ['var(--font-space-grotesk)', 'sans-serif'],
         openSans: ['var(--font-open-sans)', 'sans-serif'],
         textMeOne: ['var(--font-text-me-one)', 'sans-serif'],
+        ebGaramond: ['var(--font-eb-garamond)', 'serif'],
       },
     },
   },
