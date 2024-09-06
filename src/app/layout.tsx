@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Open_Sans, Text_Me_One, EB_Garamond } from "next/font/google";
+import { Space_Grotesk, Open_Sans, Text_Me_One } from "next/font/google";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
