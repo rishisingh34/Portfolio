@@ -1,6 +1,8 @@
-import React from 'react';
+"use client";
 import StackIcon from 'tech-stack-icons';
 import skills from '@/constants/skills';
+import { nxt } from '@/constants/images';
+import Image from 'next/image';
 
 const Skills = () => {
   return (
@@ -16,7 +18,11 @@ const Skills = () => {
               key={skill.name}
               className="flex flex-col justify-center items-center gap-3 text-xl"
             >
-              <StackIcon name={skill.name} className='w-12' /> 
+              {skill.name === 'nextjs' ? (
+                <div className='bg-white rounded-full'><Image src={nxt} alt="NextJs" className="w-12"/></div>
+              ) : (
+                <StackIcon name={skill.name} className='w-12' />
+              )} 
               <div>{skill.label}</div>
             </div>
           ))}

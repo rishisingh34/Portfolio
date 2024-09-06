@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from "next/image";
 import { rishi, whitelink } from "@/constants/images";
 import About from "@/components/About";
-import Socials from "@/components/Socials";
+import Profiles from "@/components/Profiles";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
@@ -63,10 +63,10 @@ export default function Home() {
               </li>
               <li className="mt-4">
                 <div 
-                  className={`flex items-center justify-end gap-2 ${activeSection === 'Socials' ? 'text-active' : ''}`}
-                  onClick={() => handleNavClick('Socials')}
+                  className={`flex items-center justify-end gap-2 ${activeSection === 'Profiles' ? 'text-active' : ''}`}
+                  onClick={() => handleNavClick('Profiles')}
                 >
-                  <span className="underline">Socials</span>
+                  <span className="underline">Profiles</span>
                   <span><Image src={whitelink} alt="link" className="filter invert"/></span>
                 </div>
               </li>
@@ -92,7 +92,7 @@ export default function Home() {
         {activeSection === 'About' && <About/>}
         {activeSection ==='Projects' && <Projects/>}
         {activeSection ==='Skills' && <Skills/>}
-        {activeSection === 'Socials' && <Socials/>}
+        {activeSection === 'Profiles' && <Profiles/>}
         {activeSection === 'Education' && <Education/>}
       </div>
     </div>
