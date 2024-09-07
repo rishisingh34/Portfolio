@@ -1,10 +1,10 @@
 import NavBar from "@/components/NavBar";
-import Projects from "@/components/Projects";
+import Profiles from "@/components/Profiles";
 
 export default function ProfilesPage() {
   return (
     <NavBar section='Profiles'>
-      <Projects />
+      <Profiles />
     </NavBar>
   )
 }
