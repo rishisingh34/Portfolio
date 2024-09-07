@@ -1,4 +1,3 @@
-"use client";
 import StackIcon from 'tech-stack-icons';
 import skills from '@/constants/skills';
 import { nxt } from '@/constants/images';

@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import Link from 'next/link';
 import projects  from '@/constants/projects';
@@ -12,10 +11,10 @@ const Projects = () => {
       </div>
 
       <div className="h-[70vh] w-full md:overflow-y-auto">
-        <div className="flex flex-wrap justify-center items-center gap-10 p-5 text-5xl underline font-light">
+        <div className="flex flex-wrap justify-center items-center gap-10 p-5 md:text-5xl text-2xl  underline font-light">
           {projects.map((project) => (
             <div key={project.path}>
-              <Link href={project.path} className="italic">
+              <Link href={"/projects"+project.path} className="italic">
                 {project.name}
               </Link>
             </div>

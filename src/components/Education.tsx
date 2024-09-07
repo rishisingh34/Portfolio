@@ -1,4 +1,3 @@
-"use client";
 import { school } from '@/constants/images';
 import { akg } from '@/constants/images';
 import Image from 'next/image';
@@ -13,7 +12,7 @@ const Education = () => {
       <div className='flex flex-col gap-5 mt-10 ml-5 w-full'>
         <div className='flex gap-5 md:flex-row flex-col '>
           <div>
-            <Image src={akg} alt="AKGEC" width={100} className='rounded-full'/>
+            <Image src={akg} alt="AKGEC" width={100} className='rounded-full' priority/>
           </div>
           <div>
             <div className='text-2xl font-spaceGrotesk'>Ajay Kumar Garg Engineering College, Ghaziabad</div>
@@ -25,7 +24,7 @@ const Education = () => {
         <div className='bg-white w-[80%] h-1 mb-10'></div>
         <div className='flex gap-5 md:flex-row flex-col '>
           <div>
-            <Image src={school} alt="AKGEC" width={100} className='rounded-full'/>
+            <Image src={school} alt="AKGEC" width={100} className='rounded-full' priority/>
           </div>
           <div>
             <div className='text-2xl font-spaceGrotesk'>St. Joseph{"'"}s High School, Patna</div>
