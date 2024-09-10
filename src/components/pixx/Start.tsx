@@ -10,7 +10,7 @@ export default function Start() {
           src={getstarted}
           alt="Get Started"
           width={200}
-          className="transform md:scale-150 rounded-3xl"
+          className="transform md:scale-110 rounded-3xl"
         />
       </div>
       <div className="font-spaceGrotesk ">
