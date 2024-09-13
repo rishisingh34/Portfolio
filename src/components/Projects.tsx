@@ -19,6 +19,9 @@ const Projects = () => {
               </Link>
             </div>
           ))}
+          <div>
+            <a href="https://github.com/rishisingh34/cyber-secure" target='blank'><div className='italic'>cyber secure</div></a>
+          </div>
         </div>
       </div>
     </>
