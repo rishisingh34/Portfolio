@@ -23,16 +23,19 @@ const Projects = () => {
             <a href="https://github.com/rishisingh34/cyber-secure" target='blank'><div className='italic'>cyber secure</div></a>
           </div>
           <div>
-            <a href="https://github.com/rishisingh34/cine_student.git" target='blank'><div className='italic'>CINE'24 backend{"(Student)"}</div></a>
+            <a href="https://github.com/rishisingh34/cine_student.git" target='blank'><div className='italic'>CINE&apos;24 backend{"(Student)"}</div></a>
           </div>
           <div>
-            <a href="https://github.com/rishisingh34/cine_admin.git" target='blank'><div className='italic'>CINE'24 backend{"(Admin)"}</div></a>
+            <a href="https://github.com/rishisingh34/cine_admin.git" target='blank'><div className='italic'>CINE&apos;24 backend{"(Admin)"}</div></a>
           </div>
           <div>
-            <a href="https://cine24exam.netlify.app" target='blank'><div className='italic'>CINE'24 Portal</div></a>
+            <a href="https://cine24exam.netlify.app" target='blank'><div className='italic'>CINE&apos;24 Portal</div></a>
           </div>
           <div>
             <a href="https://github.com/rishisingh34/akgec_edu.git" target='blank'><div className='italic'>akgec-edu{"(backend)"}</div></a>
+          </div>
+          <div>
+            <a href="https://cineleaderboard.netlify.app" target='blank'><div className='italic'>cine leaderboard</div></a>
           </div>
         </div>
       </div>
