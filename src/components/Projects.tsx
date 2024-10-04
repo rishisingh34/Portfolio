@@ -23,6 +23,9 @@ const Projects = () => {
             <a href="https://github.com/rishisingh34/cyber-secure" target='blank'><div className='italic'>cyber secure</div></a>
           </div>
           <div>
+            <a href="https://link-up24.vercel.app" target='blank'><div className='italic'>link-up</div></a>
+          </div>
+          <div>
             <a href="https://github.com/rishisingh34/cine_student.git" target='blank'><div className='italic'>CINE&apos;24 backend{"(Student)"}</div></a>
           </div>
           <div>
