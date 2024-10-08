@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="flex flex-wrap justify-center items-center gap-10 p-5 md:text-3xl text-2xl  underline font-light">
           {projects.map((project) => (
             <div key={project.path}>
-              <TransitionLink href={"/projects"+project.path} className="italic">
+              <TransitionLink href={"/projects"+project.path} className="italic" nav={false}>
                 {project.name}
               </TransitionLink>
             </div>
