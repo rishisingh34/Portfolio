@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import projects  from '@/constants/projects';
+import TransitionLink from '@/components/TransitionLink';
 
 const Projects = () => {
   return (
@@ -14,9 +14,9 @@ const Projects = () => {
         <div className="flex flex-wrap justify-center items-center gap-10 p-5 md:text-3xl text-2xl  underline font-light">
           {projects.map((project) => (
             <div key={project.path}>
-              <Link href={"/projects"+project.path} className="italic">
+              <TransitionLink href={"/projects"+project.path} className="italic">
                 {project.name}
-              </Link>
+              </TransitionLink>
             </div>
           ))}
           <div>

@@ -27,3 +27,29 @@ body {
 button:hover {
   color: #FF8A00; 
 }
+
+body {
+  transition-property: opacity, background,  transform, filter; 
+  transition-timing-function: ease-in-out ;
+  transition-duration : 500ms ; 
+}
+
+.page-transition {
+  opacity : 0; 
+  background : black ; 
+  transform : translateY(40px) ; 
+  filter : blur(12px) ;
+}
+
+section {
+  transition-property: opacity, background,  transform, filter; 
+  transition-timing-function: ease-in-out ;
+  transition-duration : 500ms ; 
+}
+
+.section-transition {
+  opacity : 0; 
+  background : #0D0C0C ; 
+  transform : scale(0.9) ; 
+  filter : blur(12px) ;
+}

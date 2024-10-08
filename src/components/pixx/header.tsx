@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
 import { pixx } from '@/constants/images';
+import TransitionLink from "../TransitionLink";
 
 export default function Header() {
   return (
     <>
       <div className="ml-5 flex md:flex-row flex-col gap-10 justify-between items-center md:h-[10%]">
         <div className="text-2xl font-spaceGrotesk font-light">
-          <Link href={"/"}>Profile</Link>
+          <TransitionLink href={"/"}>Profile</TransitionLink>
         </div>
         <div>
           <a href="https://github.com/rishisingh34/Pixx-ReactNative" target="_blank" rel="noopener noreferrer">

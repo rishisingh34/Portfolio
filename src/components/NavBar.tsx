@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link"; // Import Link from Next.js
 import { rishi, whitelink } from "@/constants/images";
+import TransitionLink from "@/components/TransitionLink";
 
 type NavBarProps = {
   section: string;
@@ -28,7 +28,7 @@ export default function NavBar({ section, children }: NavBarProps) {
           <nav>
             <ul>
               <li className="mt-4">
-                <Link href="/" passHref>
+                <TransitionLink href="/" nav={true}>
                   <div
                     className={`flex items-center justify-end gap-2 ${
                       section === "About" ? "text-active" : ""
@@ -39,10 +39,10 @@ export default function NavBar({ section, children }: NavBarProps) {
                       <Image src={whitelink} alt="link" className="filter invert" />
                     </span>
                   </div>
-                </Link>
+                </TransitionLink>
               </li>
               <li className="mt-4">
-                <Link href="/projects" passHref>
+                <TransitionLink href="/projects" nav={true}>
                   <div
                     className={`flex items-center justify-end gap-2 ${
                       section === "Projects" ? "text-active" : ""
@@ -53,10 +53,10 @@ export default function NavBar({ section, children }: NavBarProps) {
                       <Image src={whitelink} alt="link" className="filter invert" />
                     </span>
                   </div>
-                </Link>
+                </TransitionLink>
               </li>
               <li className="mt-4">
-                <Link href="/skills" passHref>
+                <TransitionLink href="/skills" nav={true}>
                   <div
                     className={`flex items-center justify-end gap-2 ${
                       section === "Skills" ? "text-active" : ""
@@ -67,10 +67,10 @@ export default function NavBar({ section, children }: NavBarProps) {
                       <Image src={whitelink} alt="link" className="filter invert" />
                     </span>
                   </div>
-                </Link>
+                </TransitionLink>
               </li>
               <li className="mt-4">
-                <Link href="/profiles" passHref>
+                <TransitionLink href="/profiles" nav={true}>
                   <div
                     className={`flex items-center justify-end gap-2 ${
                       section === "Profiles" ? "text-active" : ""
@@ -81,10 +81,10 @@ export default function NavBar({ section, children }: NavBarProps) {
                       <Image src={whitelink} alt="link" className="filter invert" />
                     </span>
                   </div>
-                </Link>
+                </TransitionLink>
               </li>
               <li className="mt-4">
-                <Link href="/education" passHref>
+                <TransitionLink href="/education" nav={true}>
                   <div
                     className={`flex items-center justify-end gap-2 ${
                       section === "Education" ? "text-active" : ""
@@ -95,7 +95,7 @@ export default function NavBar({ section, children }: NavBarProps) {
                       <Image src={whitelink} alt="link" className="filter invert" />
                     </span>
                   </div>
-                </Link>
+                </TransitionLink>
               </li>
             </ul>
           </nav>
@@ -106,9 +106,9 @@ export default function NavBar({ section, children }: NavBarProps) {
         <div className="h-0.5 w-full bg-white md:w-[3px] md:h-[80vh] rounded-sm"></div>
       </div>
 
-      <div className="flex flex-col items-start justify-start md:ml-4 md:w-[60%] font-openSans">
+      <section className="flex flex-col items-start justify-start md:ml-4 md:w-[60%] font-openSans">
         {children}
-      </div>
+      </section>
     </div>
   );
 }
